@@ -24,8 +24,10 @@
 	<meta name="msapplication-TileImage" content="assets/img/favicon/mstile-144x144.png">
 	<meta name="theme-color" content="#ffffff">
 	<!-- Styles -->
-	<link rel="stylesheet" type="text/css" href="assets/styles/animate.css">
 	<link rel="stylesheet" href="css/main.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/plugins/slick/slick.css"/>
+	<!-- Add fancyBox main CSS files -->
+	<link rel="stylesheet" type="text/css" href="assets/plugins/fancyBox/jquery.fancybox.css?v=2.1.5" media="screen" />
 </head>
 <body>
 	<header class="clearfix">
@@ -42,11 +44,11 @@
 		<!-- /Hidden Button Menu -->
 		<div class="header__menu-container animated">
 			<ul>
-				<li><a href="">профиль</a></li>
-				<li><a href="">баланс</a></li>
-				<li><a href="">инвестиции</a></li>
-				<li><a href="">документы</a></li>
-				<li><a href="">вопросы-ответы</a></li>
+				<li><a href="index.html">профиль</a></li>
+				<li><a href="balance.html">баланс</a></li>
+				<li><a href="invest.html">инвестиции</a></li>
+				<li><a href="documents.html">документы</a></li>
+				<li><a href="faq.html">вопросы-ответы</a></li>
 			</ul>
 		</div>
 		<div class="header__user animated clearfix">
@@ -61,24 +63,90 @@
 					</div>
 				</div>
 			</div>
+			<div class="header__user__button-aside">
+				<a href="" id="open-aside"><img src="assets/img/svg/ruble.svg" alt="aside"></a>
+			</div>
 			<div class="header__user__button-block">
 				<a href="">Выход</a>
 				<a href=""><img src="assets/img/svg/exit.svg" alt="exit"></a>
 			</div>
 		</div>
 	</header>
-	<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem mollitia, nisi perferendis nulla praesentium iure ullam eveniet illo labore reiciendis. Sint dignissimos maiores praesentium quisquam voluptatum corrupti rerum quis commodi?</div>
-	<div>Dolores, et aut veniam rem ut dicta ullam, explicabo, iusto, quo nesciunt facilis excepturi eos. Deleniti labore atque asperiores minus cum facilis, perferendis vel commodi nihil expedita, quasi assumenda eos!</div>
-	<div>Qui autem, cupiditate. Possimus suscipit blanditiis neque sunt vero beatae ad fugit ut, minima eaque. Culpa consectetur quisquam odio, totam temporibus ipsa accusantium dolores fugiat dolorum. Aliquid quae, modi magnam.</div>
-	<div>Neque, quam voluptatem inventore fuga quis excepturi ipsum deleniti. Voluptatibus ducimus deleniti voluptas dicta, illum magnam, autem molestias repellendus expedita dolore omnis officiis harum accusamus sunt ea itaque, esse beatae!</div>
-	<div>Magni, esse, velit? Accusantium iure, quidem consequatur odit reiciendis esse earum molestias. Illo ipsum, perferendis distinctio, nostrum doloremque odio atque blanditiis dolores eveniet cupiditate quo quaerat, beatae aut voluptatum eligendi.</div>
-	<div>Dolore ea, assumenda fugiat asperiores quidem enim nesciunt quos reprehenderit fuga beatae, sit excepturi facere aliquam incidunt laboriosam aspernatur! Doloribus obcaecati, deleniti ducimus incidunt nisi! Earum ad quia, amet autem.</div>
-	<div>Aspernatur mollitia sit eveniet. Quis facilis placeat omnis officiis unde earum similique animi, illo optio obcaecati cumque, alias consectetur, dolorem eaque aut eum dolore, laboriosam quidem inventore repudiandae consequatur praesentium.</div>
-	<div>Tempore odio placeat distinctio impedit iure vel, labore sequi, laborum facilis accusamus architecto nam repellat et dicta quibusdam, nesciunt? Debitis doloremque, magni corrupti aperiam illo sunt dolore quasi nobis earum.</div>
-	<div>Sequi nihil, blanditiis, nesciunt autem commodi reprehenderit accusantium cum? Consequuntur quo veritatis ducimus assumenda id esse, amet, inventore doloremque quidem, dolore tenetur atque non deleniti! Dicta facilis veniam, nemo expedita?</div>
-	<div>Quisquam in suscipit quia labore quis perspiciatis facilis eveniet iusto nesciunt maiores iste sit eius, aspernatur vel id nobis illo quo, corporis ducimus porro ipsam. Accusamus quam eligendi voluptate, et.</div>
+	<!-- Main -->
+	<div class="main-conteiner index">
+		<div class="page__row page-title-choise-tabs clearfix">
+			<p>личный кабинет</p>
+		</div>
+		<div class="page__function-container">
+			<div class="page__function-container__title page__function-container__title--blue">
+				Здравствуйте, Дмитрий иванович шамахин!
+			</div>
+			<div class="page__function-container__content">
+				<div class="row">
+					<div class="col-md-4">
+						<p>контактная информация</p>
+						<input type="text" placeholder="E-mail:">
+						<input type="text" placeholder="Skype:">
+						<input type="text" placeholder="Телефон:">
+					</div>
+					<div class="col-md-4">
+						<p>общие данные</p>
+						<input type="text" placeholder="День рождения:">
+						<input type="text" placeholder="Должность:">
+						<input type="text" placeholder="Образование:">
+					</div>
+					<div class="col-md-4">
+						<p>дополнительная информация</p>
+						<input type="text" placeholder="День рождения:">
+						<input type="text" placeholder="Должность:">
+						<input type="text" placeholder="Выбрать аватар">
+					</div>
+				</div>
+				<div class="page__row">
+					<div class="button btn-save">сохранить</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<aside class="main-aside animated">
+		<div class="balance__balance-block">
+			<div class="balance-block-row"><h2>ВАШ баланс</h2></div>
+			<div class="balance-block-row"><p>120 000<span> руб.</span></p></div>
+			<div class="balance-block-row">
+				<table>
+					<tr>
+						<td>
+							<p>инвестировано</p>
+						</td>
+						<td>
+							<p>000 <span>руб.</span></p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<p>выведено</p>
+						</td>
+						<td>
+							<p>000 <span>руб.</span></p>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</aside>
+	<!-- /Main -->
 	<!-- JQ 1.11.3 -->
 	<script src="assets/scripts/jquery-1.11.3.min.js"></script>
+	<!-- noUiSlider -->
+	<script src="assets/plugins/noUiSlider.8.0.2/nouislider.min.js"></script>
+	<script src="assets/plugins/noUiSlider.8.0.2/wNumb.min.js"></script>
+	<!-- Slick Slider -->
+	<script src="assets/plugins/slick/slick.min.js"></script>
+	<!-- Add fancyBox main JS -->
+	<script type="text/javascript" src="assets/plugins/fancyBox/jquery.fancybox.js?v=2.1.5"></script>
+	<!-- modalEffects.js -->
+	<script src="assets/plugins/modalEffects/classie.js"></script>
+	<script src="assets/plugins/modalEffects/modalEffects.js"></script>
 	<!-- Own Script / Наш скрипт -->
 	<script src="assets/scripts/oun-script.js"></script>
 </body>

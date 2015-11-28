@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>личный кабинет</title>
+	<!-- Favicon -->
+	<link rel="apple-touch-icon" sizes="57x57" href="assets/img/favicon/apple-touch-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="assets/img/favicon/apple-touch-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="assets/img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="assets/img/favicon/apple-touch-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="assets/img/favicon/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="assets/img/favicon/apple-touch-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="assets/img/favicon/apple-touch-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="assets/img/favicon/apple-touch-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-touch-icon-180x180.png">
+	<link rel="icon" type="image/png" href="assets/img/favicon/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="assets/img/favicon/favicon-194x194.png" sizes="194x194">
+	<link rel="icon" type="image/png" href="assets/img/favicon/favicon-96x96.png" sizes="96x96">
+	<link rel="icon" type="image/png" href="assets/img/favicon/android-chrome-192x192.png" sizes="192x192">
+	<link rel="icon" type="image/png" href="assets/img/favicon/favicon-16x16.png" sizes="16x16">
+	<link rel="manifest" href="/assets/img/faviconmanifest.json">
+	<link rel="mask-icon" href="assets/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="msapplication-TileImage" content="assets/img/favicon/mstile-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+	<!-- Styles -->
+	<link rel="stylesheet" href="css/main.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/plugins/slick/slick.css"/>
+	<!-- Add fancyBox main CSS files -->
+	<link rel="stylesheet" type="text/css" href="assets/plugins/fancyBox/jquery.fancybox.css?v=2.1.5" media="screen" />
+</head>
+<body>
+	<header class="clearfix">
+		<div class="header__logo-container">
+			<a href="index.php">
+				<img src="assets/img/logos/Inkasso.svg" alt="logo">
+				<img src="assets/img/logos/Inkasso_mini.svg" alt="logo-mini">
+			</a>
+		</div>
+		<!-- Hidden Button Menu -->
+		<div class="header__menu-button">
+			<img src="assets/img/svg/menu.svg" alt="logo">
+		</div>
+		<!-- /Hidden Button Menu -->
+		<div class="header__menu-container animated">
+			<ul>
+				<li><a href="index.html">профиль</a></li>
+				<li><a href="balance.html">баланс</a></li>
+				<li><a href="invest.html">инвестиции</a></li>
+				<li><a href="documents.html">документы</a></li>
+				<li><a href="faq.html">вопросы-ответы</a></li>
+			</ul>
+		</div>
+		<div class="header__user animated clearfix">
+			<div class="header__user__name-block clearfix">
+				<div class="header__user__name-box">
+					<div class="img-wrap">
+						<img src="assets/img/users/user-noname.png" alt="User Avatar">
+					</div>
+					<div class="text-wrap">
+						<p>Дитрмий</p>
+						<p><span>Иванович Шамахин</span></p>
+					</div>
+				</div>
+			</div>
+			<div class="header__user__button-aside">
+				<a href="" id="open-aside"><img src="assets/img/svg/ruble.svg" alt="aside"></a>
+			</div>
+			<div class="header__user__button-block">
+				<a href="">Выход</a>
+				<a href=""><img src="assets/img/svg/exit.svg" alt="exit"></a>
+			</div>
+		</div>
+	</header>
+	<!-- Main -->
+	<div class="main-conteiner">
+			<div class="page__row page-title-choise-tabs clearfix">
+				<p>открыть вклад</p>
+				<div class="page__buttons-container">
+					<div class="button btn-small-tab main-page-tab active" data-tab="1">открыть вклад</div>
+					<div class="button btn-small-tab main-page-tab" data-tab="2">действующие вклады</div>
+				</div>
+			</div>
+			<div class="page-tab-container" data-content="1">
+				<!-- функционал -->
+				<div class="page__function-container">
+					<div class="page__function-container__title page__function-container__title--darkgray">
+						электронный платеж (руб.) <div class="page__function-container__title__element-question"></div>
+					</div>
+					<div class="page__function-container__content">
+						<div class="page__info-row clearfix">
+							<span>Срок</span>
+							<span>6/12/24 месяцев</span>
+						</div>
+						<div class="page__info-row clearfix">
+							<span>ставка ежемесячо</span>
+							<span>6/12/24 месяцев</span>
+						</div>
+						<div class="page__info-row clearfix">
+							<span>сумма инвестиций</span>
+							<span>10 000 руб.</span>
+						</div>
+						<p>
+							Мы за честный, открытый, прозрачный бизнес. Мы готовы предложить нашим клиентам полностью предоставлять информацию обо всех аспектах нашей деятельности.
+							Мы за высокий доход наших клиентов. Наши ставки по сбережениям населения выше банковских более чем на 5%. Мы за снижение рисков. Мы страхуем риски наших клиентов и свою ответственность за неисполнение своих обязательств перед ними.
+							Мы за качественное обслуживание. Особое внимание мы уделяем работе с клиентами. Наши клиенты всегда могут рассчитывать на вежливое профессиональное обслуживание.
+						</p>
+						<div class="page__row clearfix">
+							<div class="button btn-invest clearfix md-trigger" data-modal="modal-1">создать новый вклад</div>
+						</div>
+					</div>
+				</div>
+				<!-- /функционал -->
+				<!-- функционал -->
+				<div class="page__function-container">
+					<div class="page__function-container__title page__function-container__title--darkgray">
+						долевой инвестиционный план <div class="page__function-container__title__element-question"></div>
+					</div>
+					<div class="page__function-container__content">
+						<div class="page__info-row clearfix">
+							<span>Срок</span>
+							<span>6/12/24 месяцев</span>
+						</div>
+						<div class="page__info-row clearfix">
+							<span>ставка ежемесячо</span>
+							<span>6/12/24 месяцев</span>
+						</div>
+						<div class="page__info-row clearfix">
+							<span>сумма инвестиций</span>
+							<span>10 000 руб.</span>
+						</div>
+						<p>
+							Мы за честный, открытый, прозрачный бизнес. Мы готовы предложить нашим клиентам полностью предоставлять информацию обо всех аспектах нашей деятельности.
+							Мы за высокий доход наших клиентов. Наши ставки по сбережениям населения выше банковских более чем на 5%. Мы за снижение рисков. Мы страхуем риски наших клиентов и свою ответственность за неисполнение своих обязательств перед ними.
+							Мы за качественное обслуживание. Особое внимание мы уделяем работе с клиентами. Наши клиенты всегда могут рассчитывать на вежливое профессиональное обслуживание.
+						</p>
+						<div class="page__row clearfix">
+							<div class="button btn-invest clearfix md-trigger" data-modal="modal-1">создать новый вклад</div>
+						</div>
+					</div>
+				</div>
+				<!-- /функционал -->
+				<!-- функционал -->
+				<div class="page__function-container">
+					<div class="page__function-container__title page__function-container__title--gray">
+						долевой инвестиционный план
+					</div>
+					<div class="page__function-container__content">
+						<p>
+							Мы за честный, открытый, прозрачный бизнес. Мы готовы предложить нашим клиентам полностью предоставлять информацию обо всех аспектах нашей деятельности.
+							Мы за высокий доход наших клиентов. Наши ставки по сбережениям населения выше банковских более чем на 5%. Мы за снижение рисков. Мы страхуем риски наших клиентов и свою ответственность за неисполнение своих обязательств перед ними.
+							Мы за качественное обслуживание. Особое внимание мы уделяем работе с клиентами. Наши клиенты всегда могут рассчитывать на вежливое профессиональное обслуживание.
+						</p>
+						<p>
+							Мы за честный, открытый, прозрачный бизнес. Мы готовы предложить нашим клиентам полностью предоставлять информацию обо всех аспектах нашей деятельности.
+							Мы за высокий доход наших клиентов. Наши ставки по сбережениям населения выше банковских более чем на 5%. Мы за снижение рисков. Мы страхуем риски наших клиентов и свою ответственность за неисполнение своих обязательств перед ними.
+							Мы за качественное обслуживание. Особое внимание мы уделяем работе с клиентами. Наши клиенты всегда могут рассчитывать на вежливое профессиональное обслуживание.
+						</p>
+						<p>
+							Мы за честный, открытый, прозрачный бизнес. Мы готовы предложить нашим клиентам полностью предоставлять информацию обо всех аспектах нашей деятельности.
+							Мы за высокий доход наших клиентов. Наши ставки по сбережениям населения выше банковских более чем на 5%. Мы за снижение рисков. Мы страхуем риски наших клиентов и свою ответственность за неисполнение своих обязательств перед ними.
+							Мы за качественное обслуживание. Особое внимание мы уделяем работе с клиентами. Наши клиенты всегда могут рассчитывать на вежливое профессиональное обслуживание.
+						</p>
+					</div>
+				</div>
+				<!-- /функционал -->
+			</div>
+			<div class="page-tab-container" data-content="2">
+				<div class="messages__table">
+					<table>
+						<caption>Таблица по вкладам</caption>
+						<tr>
+							<th>Дата</th>
+							<th>Сумма</th>
+							<th>Срок вклада</th>
+							<th>Дата завершения</th>
+							<th>Ставка</th>
+						</tr>
+						<tr>
+							<td>20.01.2015</td>
+							<td>10 000</td>
+							<td>6 месяцев</td>
+							<td>20.03.2016</td>
+							<td>5%</td>
+						</tr>
+						<tr>
+							<td>20.01.2015</td>
+							<td>10 000</td>
+							<td>6 месяцев</td>
+							<td>20.03.2016</td>
+							<td>5%</td>
+						</tr>
+						<tr>
+							<td>20.01.2015</td>
+							<td>10 000</td>
+							<td>6 месяцев</td>
+							<td>20.03.2016</td>
+							<td>5%</td>
+						</tr>
+						<tr>
+							<td>20.01.2015</td>
+							<td>10 000</td>
+							<td>6 месяцев</td>
+							<td>20.03.2016</td>
+							<td>5%</td>
+						</tr>
+						<tr>
+							<td>20.01.2015</td>
+							<td>10 000</td>
+							<td>6 месяцев</td>
+							<td>20.03.2016</td>
+							<td>5%</td>
+						</tr>
+						<tr>
+							<td>20.01.2015</td>
+							<td>10 000</td>
+							<td>6 месяцев</td>
+							<td>20.03.2016</td>
+							<td>5%</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+	<aside class="main-aside animated">
+		<div class="balance__balance-block">
+			<div class="balance-block-row"><h2>ВАШ баланс</h2></div>
+			<div class="balance-block-row"><p>120 000<span> руб.</span></p></div>
+			<div class="balance-block-row">
+				<table>
+					<tr>
+						<td>
+							<p>инвестировано</p>
+						</td>
+						<td>
+							<p>000 <span>руб.</span></p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<p>выведено</p>
+						</td>
+						<td>
+							<p>000 <span>руб.</span></p>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</aside>
+	<!-- /Main -->
+	<div class="md-modal md-effect-13" id="modal-1">
+		<div class="md-content">
+			<h3>Подать Заявку</h3>
+			<div>
+				<p>КРАТКОСРОЧНЫЕ ЗАЙМЫ ДЛЯ ФИЗИЧЕСКИХ ЛИЦ</p>
+				<ul>
+					<!-- <li><strong>Read:</strong> Modal windows will probably tell you something important so don't forget to read what it says.</li> -->
+					<li><input type="text" name="name" placeholder="Фамилия"></li>
+					<li><input type="text" name="name" placeholder="Имя"></li>
+					<li><input type="text" name="name" placeholder="Отчество"></li>
+					<li><input type="phone" name="phone" placeholder="Телефон"></li>
+					<li><input type="email" name="email" placeholder="E-mail"></li>
+				</ul>
+				<button class="md-close">отправить</button>
+			</div>
+		</div>
+	</div>
+	
+	<!-- Инвестиции - модальное окно -->
+	<div class="md-modal md-effect-13" id="modal-2">
+		<div class="md-content">
+			<h3>Задать Вопрос</h3>
+			<div>
+				<!-- <p>КРАТКОСРОЧНЫЕ ЗАЙМЫ ДЛЯ ФИЗИЧЕСКИХ ЛИЦ</p> -->
+				<ul>
+					<!-- <li><strong>Read:</strong> Modal windows will probably tell you something important so don't forget to read what it says.</li> -->
+					<li><input type="phone" name="phone" placeholder="Телефон"></li>
+					<li><input type="email" name="email" placeholder="E-mail"></li>
+					<li><textarea name="commit" placeholder="Ваш вопрос"></textarea></li>
+				</ul>
+				<button class="md-close">отправить</button>
+			</div>
+		</div>
+	</div>
+	<!-- /Инвестиции - модальное окно -->
+	
+	
+	<div class="md-overlay"></div>
+	<!-- JQ 1.11.3 -->
+	<script src="assets/scripts/jquery-1.11.3.min.js"></script>
+	<!-- noUiSlider -->
+	<script src="assets/plugins/noUiSlider.8.0.2/nouislider.min.js"></script>
+	<script src="assets/plugins/noUiSlider.8.0.2/wNumb.min.js"></script>
+	<!-- Slick Slider -->
+	<script src="assets/plugins/slick/slick.min.js"></script>
+	<!-- Add fancyBox main JS -->
+	<script type="text/javascript" src="assets/plugins/fancyBox/jquery.fancybox.js?v=2.1.5"></script>
+	<!-- modalEffects.js -->
+	<script src="assets/plugins/modalEffects/classie.js"></script>
+	<script src="assets/plugins/modalEffects/modalEffects.js"></script>
+	<!-- Own Script / Наш скрипт -->
+	<script src="assets/scripts/oun-script.js"></script>
+</body>
+</html>
